@@ -8,6 +8,9 @@
   statistic                 = "Average"
   threshold                 = var.threshold
   alarm_description         = "This metric monitors ec2 cpu utilization"
+  actions_enabled     = "true"
+  alarm_actions       = [aws_sns_topic.sns.arn]
+  ok_actions          = [aws_sns_topic.sns.arn]
   insufficient_data_actions = [
 
   ]

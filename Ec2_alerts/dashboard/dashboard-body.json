@@ -1,0 +1,111 @@
+{
+    "widgets": [
+        {
+            "height": 15,
+            "width": 24,
+            "y": 0,
+            "x": 0,
+            "type": "explorer",
+            "properties": {
+                "metrics": [
+                    {
+                        "metricName": "CPUUtilization",
+                        "resourceType": "AWS::EC2::Instance",
+                        "stat": "Average"
+                    },
+                    {
+                        "metricName": "NetworkPacketsIn",
+                        "resourceType": "AWS::EC2::Instance",
+                        "stat": "Average"
+                    },
+                    {
+                        "metricName": "NetworkPacketsOut",
+                        "resourceType": "AWS::EC2::Instance",
+                        "stat": "Average"
+                    },
+                    {
+                        "metricName": "StatusCheckFailed",
+                        "resourceType": "AWS::EC2::Instance",
+                        "stat": "Sum"
+                    },
+                    {
+                        "metricName": "DiskReadOps",
+                        "resourceType": "AWS::EC2::Instance",
+                        "stat": "Average"
+                    },
+                    {
+                        "metricName": "DiskWriteOps",
+                        "resourceType": "AWS::EC2::Instance",
+                        "stat": "Average"
+                    }
+                ],
+                "aggregateBy": {
+                    "key": "Name",
+                    "func": "AVG"
+                },
+                "labels": [
+                    {
+                        "key": "Name",
+                        "value": "pt0-acc00-euc1-ROAD-ec2"
+                    },
+                    {
+                        "key": "Name",
+                        "value": "pt0-acc00-euc1-ROADBOT-ec2"
+                    },
+                    {
+                        "key": "Name",
+                        "value": "se0-acc00-euc1-ROAD-ec2"
+                    },
+                    {
+                        "key": "Name",
+                        "value": "se0-acc00-euc1-ROADBOT-ec2"
+                    },
+                    {
+                        "key": "Name",
+                        "value": "es0-acc00-euc1-MRT-ec2"
+                    },
+                    {
+                        "key": "Name",
+                        "value": "es0-acc00-euc1-MRTCLOUD-ec2"
+                    },
+                    {
+                        "key": "Name",
+                        "value": "es0-acc00-euc1-ROAD-ec2"
+                    },
+                    {
+                        "key": "Name",
+                        "value": "es0-acc00-euc1-ROADBOT-ec2"
+                    },
+                    {
+                        "key": "Name",
+                        "value": "it0-acc00-euc1-ROAD-ec2"
+                    },
+                    {
+                        "key": "Name",
+                        "value": "it0-acc00-euc1-ROADBOT-ec2"
+                    },
+                    {
+                        "key": "Name",
+                        "value": "uk0-acc00-euc1-ROAD-ec2"
+                    },
+                    {
+                        "key": "Name",
+                        "value": "uk0-acc00-euc1-ROADBOT-ec2"
+                    }
+                ],
+                "widgetOptions": {
+                    "legend": {
+                        "position": "bottom"
+                    },
+                    "view": "timeSeries",
+                    "stacked": false,
+                    "rowsPerPage": 50,
+                    "widgetsPerRow": 3
+                },
+                "period": 900,
+                "splitBy": "Name",
+                "region": "eu-central-1"
+            }
+        }
+    ]
+}
