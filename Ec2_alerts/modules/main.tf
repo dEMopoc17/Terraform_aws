@@ -6,7 +6,7 @@
   namespace                 = "AWS/EC2"
   period                    = 120
   statistic                 = "Average"
-  threshold                 = 75
+  threshold                 = var.threshold
   alarm_description         = "This metric monitors ec2 cpu utilization"
   insufficient_data_actions = [
 
